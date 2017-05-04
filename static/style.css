@@ -1,0 +1,187 @@
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
+}
+
+#game {
+    margin: auto;
+    width: 70vw;
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+    padding: 5px 0 30px;
+    border-radius: 2%;
+}
+
+.game-title {
+    font-family: fantasy;
+    font-size: 2.2em;
+}
+
+.input-prompt {
+    font-family: fantasy;
+}
+
+.option-field {
+    width: 50vw;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.option-item {
+    height: 3.3em;
+    line-height: 3.3em;
+}
+
+.option-prompt {
+    float: left;
+    text-align: right;
+    box-sizing: border-box;
+    font-family: fantasy;
+    padding-right: 10%;
+    width: 50%;
+}
+
+.option-input {
+    float: left;
+    box-sizing: border-box;
+    font-family: fantasy;
+    font-size: 1.2em;
+    height: 80%;
+    margin: auto auto;
+    position: relative;
+    top: 10%;
+    width: 25%;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 5%;
+}
+
+.option-input:focus {
+    background-color: lightyellow;
+}
+
+.error-prompt {
+    float: left;
+    font-size: 1em;
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: fantasy;
+    color: gray;
+}
+
+.set-button {
+    display: block;
+    margin: 1em auto;
+    font-family: fantasy;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 5%;
+    border: 1px solid silver;
+    width: 200px;
+    height: 50px;
+}
+
+.set-button:hover {
+    background-color: burlywood;
+    color: white;
+    border-color: gray;
+}
+
+
+.set-button:active {
+    background-color: peru;
+    color: white;
+    border-color: black;
+}
+
+#board {
+    margin: auto;
+    max-width: 56vw;
+    max-height: 56vw;
+    overflow: scroll;
+    position: relative;
+    display: none;
+    background: rgb(250, 250, 250);
+}
+
+.board-row {
+    margin: 0 auto;
+    clear: left;
+    height: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.board-cell {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 0.2em;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: fantasy;
+    font-weight: bold;
+    
+}
+
+#empty {
+    background-color: wheat;
+}
+
+#empty:active {
+    background-color: sandybrown;
+}
+
+#flipped {
+    background-color: cornsilk;
+}
+
+#flagged {
+    background-color: indianred;
+}
+
+#mine {
+    background-color: dimgrey;
+}
+
+#flagged-wrong {
+    background-color: white;
+}
+
+#game-status {
+    position: fixed;
+    top: 20%;
+    left: 3%;
+    font-family: fantasy;
+    visibility: hidden;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10%;
+    color: white;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+.status-data {
+    margin-left: 10%;
+}
+
+#game-result {
+    font-size: 1.3em;
+}

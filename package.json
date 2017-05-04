@@ -1,0 +1,15 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "mine sweeper with pure html/css",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinalx",
+  "license": "MIT"
+}

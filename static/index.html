@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Mine Sweeper</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="game">
+        <h1 class="game-title">Mine Sweeper</h1>
+        <div id="board"></div>
+        <div id="game-status">
+            <table visibility="hidden">
+                <tr class="status-item mines-left">
+                    <th class="status-head">Mines Left</th>
+                    <td class="status-data"></td>
+                </tr>
+                <tr class="status-item cells-left">
+                    <th class="status-head">Cells Left</th>
+                    <td class="status-data"></td>
+                </tr><!--
+                <tr class="status-item time-elapse">
+                    <th class="status-head">Time Elapse</th>
+                    <td class="status-data"></td>
+                </tr>-->
+            </table>
+            <div id="game-result"></div>
+
+        </div>
+        <div class="option-field">
+            <button id="reset-game" class="set-button">reset game</button>
+            <button id="game-option" class="set-button">Game Option</button>
+            <div id="option-items">
+                <div class="option-item">
+                    <p class="option-prompt">Board Width</p>
+                    <input type="text" class="option-input" id="board-width" value="10"/>
+                </div>
+
+                <div class="option-item">
+                    <p class="option-prompt">Board Height</p>
+                    <input type="text" class="option-input" id="board-height" value="10"/>
+                </div>
+
+                <div class="option-item">
+                    <p class="option-prompt">Number of Mines</p>
+                    <input type="text" class="option-input" id="num-of-mines" value="20"/>
+                </div>
+                <button id="ok" class="set-button">OK</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
